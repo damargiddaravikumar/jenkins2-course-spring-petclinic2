@@ -455,16 +455,23 @@
             <activeByDefault>true</activeByDefault>
         </activation>
         <properties>
-          <sonar.host.url>http://localhost:9005</sonar.host.url>
-         
+          <sonar.host.url>http://localhost:9005</sonar.host.url>         
         </properties>
     </profile>
    </profiles>
 <distributionManagement>
+    <repository>
+        <id>my-releases</id>
+        <name>my-releases</name>
+        <url>http://localhost:8083/nexus/content/repositories/my-releases/</url>
+        <layout>default</layout>
+    </repository>
     <snapshotRepository>
-      <id>nexus-snapshots</id>
-      <url>http://localhost:8082/nexus/content/repositories/snapshots</url>
+        <id>my-snapshots</id>
+        <name>my-snapshots</name>
+        <url>http://localhost:8083/nexus/content/repositories/my-snapshots/</url>
+        <layout>default</layout>
     </snapshotRepository>
-  </distributionManagement>
+</distributionManagement>
     <url>demopetclinic</url>
 </project>
