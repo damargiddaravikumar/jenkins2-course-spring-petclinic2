@@ -455,7 +455,7 @@
             <activeByDefault>true</activeByDefault>
         </activation>
         <properties>
-          <sonar.host.url>http://localhost:9005</sonar.host.url>
+          <sonar.host.url>http://localhost:8002</sonar.host.url>
          
         </properties>
     </profile>
@@ -463,7 +463,7 @@
 <distributionManagement>
     <snapshotRepository>
       <id>nexus-snapshots</id>
-      <url>http://localhost:8082/nexus/content/repositories/snapshots</url>
+      <url>http://localhost:8083/nexus/content/repositories/snapshots</url>
     </snapshotRepository>
   </distributionManagement>
     <url>demopetclinic</url>
